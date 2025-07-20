@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://35qwr60m5bme"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CoinsBox" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.029
+anchor_right = 0.016
+anchor_bottom = 0.029
+offset_left = 0.567999
+offset_top = 0.208
+offset_right = 230.568
+offset_bottom = 45.208
+
+[node name="Panel" type="Panel" parent="CoinsBox"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = -17.5
+offset_right = 44.0
+offset_bottom = 17.5
+grow_vertical = 2
