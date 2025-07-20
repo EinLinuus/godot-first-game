@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b0vr44tm3mwkx"]
+[gd_scene load_steps=14 format=3 uid="uid://b0vr44tm3mwkx"]
 
 [ext_resource type="PackedScene" uid="uid://dhyc2nvcf3cgj" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://0vcje5cltmld" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://xulv2kiwjv75" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://d200aqghorew6" path="res://scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://cjbn1iv7a3jb1" path="res://scenes/slime.tscn" id="6_p57ef"]
+[ext_resource type="FontFile" uid="uid://3po7vxoj5b0k" path="res://assets/fonts/PixelOperator8.ttf" id="7_u5sy4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -273,3 +274,25 @@ autoplay = "move"
 
 [node name="Slime" parent="Enemies" instance=ExtResource("6_p57ef")]
 position = Vector2(392, 36)
+
+[node name="Instructions" type="Label" parent="."]
+offset_left = -94.0
+offset_top = -66.0
+offset_right = -3.0
+offset_bottom = -36.0
+theme_override_fonts/font = ExtResource("7_u5sy4")
+theme_override_font_sizes/font_size = 8
+text = "Hi! Press A/D
+to move,
+Space to jump."
+
+[node name="Instructions2" type="Label" parent="."]
+offset_left = 365.0
+offset_top = -1.0
+offset_right = 481.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0.00784314, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("7_u5sy4")
+theme_override_font_sizes/font_size = 8
+text = "Attention, a Slime!
+Avoid any contact."
