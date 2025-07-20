@@ -20,5 +20,5 @@ The following tutorial was used to create this game:
 
 [Brackeys: How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0)
 
-The assets are also from the Brackeys tutorial, please see [the assets license file](assets/LICENSE & CREDITS.txt) for more information.
+The assets are also from the Brackeys tutorial, please see [the assets license file](assets/LICENSE%20%26%20CREDITS.txt) for more information.
 
