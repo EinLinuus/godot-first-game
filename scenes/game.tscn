@@ -275,7 +275,9 @@ autoplay = "move"
 [node name="Slime" parent="Enemies" instance=ExtResource("6_p57ef")]
 position = Vector2(392, 36)
 
-[node name="Instructions" type="Label" parent="."]
+[node name="Texts" type="Node" parent="."]
+
+[node name="Instructions" type="Label" parent="Texts"]
 offset_left = -94.0
 offset_top = -66.0
 offset_right = -3.0
@@ -286,7 +288,7 @@ text = "Hi! Press A/D
 to move,
 Space to jump."
 
-[node name="Instructions2" type="Label" parent="."]
+[node name="Slime warning" type="Label" parent="Texts"]
 offset_left = 365.0
 offset_top = -1.0
 offset_right = 481.0
