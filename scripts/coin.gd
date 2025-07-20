@@ -1,6 +1,5 @@
 extends Area2D
 
-@onready var game_manager = %GameManager
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 # Called when the node enters the scene tree for the first time.
@@ -18,4 +17,4 @@ func _on_body_entered(body: Node2D) -> void:
 	# the player is set to collision layer 2 (Player / Inspector / Collision / Layer)
 	# and the coin's collision mask is also set to layer 2 (Coin / Inspector / Collision / Layer)
 	animation_player.play('pickup')
-	game_manager.add_point()
+	GameState.add_point()
