@@ -1,5 +1,6 @@
 extends Area2D
 
+@onready var game_manager = %GameManager
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,4 +17,5 @@ func _on_body_entered(body: Node2D) -> void:
 	# the player is set to collision layer 2 (Player / Inspector / Collision / Layer)
 	# and the coin's collision mask is also set to layer 2 (Coin / Inspector / Collision / Layer)
 	queue_free()
+	game_manager.add_point()
 	pass # Replace with function body.

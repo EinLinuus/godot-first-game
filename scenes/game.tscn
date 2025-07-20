@@ -1,5 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://b0vr44tm3mwkx"]
+[gd_scene load_steps=15 format=3 uid="uid://b0vr44tm3mwkx"]
 
+[ext_resource type="Script" uid="uid://dwghrstcff54" path="res://scripts/game_manager.gd" id="1_gee14"]
 [ext_resource type="PackedScene" uid="uid://dhyc2nvcf3cgj" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://0vcje5cltmld" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://b80cgeteytap8" path="res://scenes/platform.tscn" id="3_lnu2h"]
@@ -216,6 +217,10 @@ _data = {
 
 [node name="Game" type="Node2D"]
 
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_gee14")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_lbhrr")
 format = 2
@@ -287,6 +292,25 @@ theme_override_font_sizes/font_size = 8
 text = "Hi! Press A/D
 to move,
 Space to jump."
+
+[node name="Made it" type="Label" parent="Texts"]
+offset_left = 457.0
+offset_top = -54.0
+offset_right = 535.0
+offset_bottom = -44.0
+theme_override_fonts/font = ExtResource("7_u5sy4")
+theme_override_font_sizes/font_size = 8
+text = "You made it!"
+
+[node name="Coins Count" type="Label" parent="Texts"]
+offset_left = 456.0
+offset_top = -43.0
+offset_right = 534.0
+offset_bottom = -33.0
+theme_override_fonts/font = ExtResource("7_u5sy4")
+theme_override_font_sizes/font_size = 8
+text = "Coins: 5"
+horizontal_alignment = 1
 
 [node name="Slime warning" type="Label" parent="Texts"]
 offset_left = 365.0
